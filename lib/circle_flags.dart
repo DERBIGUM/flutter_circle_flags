@@ -18,6 +18,9 @@ class CircleFlag extends StatelessWidget {
       child: Image.asset(
         'assets/png/$countryCode.png',
         package: 'circle_flags',
+        errorBuilder: (context, error, stacktrace) {
+          return Container();
+        },
       ),
     );
   }
